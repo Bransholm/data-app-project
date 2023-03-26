@@ -1,0 +1,16 @@
+{
+  "name": "Barack Obama",
+  "nickname": "B",
+  "image": "https://playplex.mtvnimages.com/uri/mgid:arc:content:southpark.intl:15015a78-ed01-11e0-aca6-0026b9414f30?stage=staging&ep=shared.southpark.nordics",
+  "occupation": "President of the United States",
+  "age": 54,
+  "voicedBy": "Trey Parker",
+  "gender": "Male",
+  "religion": "Christian",
+  "catchPhrase": "Boom Baby!, I decided to hang it up maybe give this President thing a shoot.",
+  "hairColor": "Black",
+  "schoolGrade": null,
+  "episodes": "S12E02, S12E12, S13E02, S13E03, S13E04, S14E01, S14E06, S14E08, S14E13, S15E02, S15E04, S15E08, S15E12, S16E08, S16E11, S16E14, S17E01, S17E05, S19E02",
+  "appearances": 19,
+  "firstAppearance": "S12E02"
+}
