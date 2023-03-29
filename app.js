@@ -1,41 +1,25 @@
-"Use strict";
+"use strict";
+console.log("Hi Javascript");
+window.addEventListener("load", startApp);
 
-window.addEventListener("load", initApp);
-
-async function initApp() {
-  console.log("initApp: initApp.js is running");
-  const harry = await getCharacter(
-    "https://raw.githubusercontent.com/cederdorff/dat-js/main/data/harry.json"
+async function startApp() {
+  const characters = await getCharacters(
+    "https://cederdorff.github.io/dat-js/05-data/southpark.json"
   );
-  showCharacter(harry);
-
-  const draco = await getCharacter(
-    "https://raw.githubusercontent.com/cederdorff/dat-js/main/data/draco.json"
-  );
-  showCharacter(draco);
-
-  const ron = await getCharacter(
-    "https://raw.githubusercontent.com/cederdorff/dat-js/main/data/ron.json"
-  );
-  showCharacter(ron);
+  characters.forEach(addCharacters);
 }
 
-async function getCharacter(url) {
+async function getCharacters(url) {
   const response = await fetch(url);
-  const data = await response.json();
-  return data;
+  const charactersData = await response.json();
+  return charactersData;
 }
 
-function showCharacter(character) {
-  console.log(character);
-
-  document.querySelector("body").insertAdjacentHTML(
+function addCharacters(characters) {
+  const listCharacters = document.querySelector("#characters");
+  listCharacters.insertAdjacentHTML(
     "beforeend",
-    /*html*/ `
-      <article>
-            <h2>${character.name}</h2>
-            <img src="${character.image}" alt="" />
-        </article>
-`
+    `<li>${characters.name} <br /><img src="${characters.image}" alt="The image of ${characters.name} isn't avaible" /></li>`
   );
 }
+//onerror="this.onerror=null; this.src='https://sw6315.sfstatic.io/upload_dir/shop/Banan-Oppustelig.jpg'"
