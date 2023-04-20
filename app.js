@@ -16,10 +16,26 @@ async function getCharacters(url) {
 }
 
 function addCharacters(characters) {
-  const listCharacters = document.querySelector("#characters");
+  const listCharacters = document.querySelector(".showCharacters");
   listCharacters.insertAdjacentHTML(
     "beforeend",
-    `<li>${characters.name} <br /><img src="${characters.image}" alt="The image of ${characters.name} isn't avaible" /></li>`
+    `
+    <article class="grabcharacters">
+    ${characters.name}<br>
+    <img src="${characters.image}" alt="The image of ${characters.name} isn't avaible" onerror="this.onerror=null; this.src='https://freesvg.org/img/north_park.png'"/>
+    </article>
+    `
   );
+
+  document.querySelector("#showCharacters2 article:last-child").addEventListener("click", characterClicked);
+  function characterClicked() {
+    document.querySelector("dialog").showModal();
+    document.querySelector("#dialogimage").src = characters.image;
+    document.querySelector("#dialogname").textContent=characters.name;
+    console.log("Her er vi");
+  }
+
+
+
 }
 //onerror="this.onerror=null; this.src='https://sw6315.sfstatic.io/upload_dir/shop/Banan-Oppustelig.jpg'"

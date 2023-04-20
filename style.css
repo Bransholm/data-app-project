@@ -1,0 +1,44 @@
+html,
+body {
+  background-color: black;
+  color: chocolate;
+}
+
+h1 {
+  text-align: center;
+}
+
+.gridlayout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-auto-rows: 200px;
+}
+
+img {
+  height: 150px;
+}
+
+.grabcharacters {
+  background-color: indigo;
+  letter-spacing: 1px;
+  font-weight: 1000;
+  color: yellow;
+}
+
+/*.gridlayout :nth-child(1) {
+  grid-column: 1 / span 4;
+}
+
+/*.gridlayout :nth-child(14) {
+  grid-column: 1 / span 4;
+}*/
+
+.grabcharacters:hover {
+  background-color: yellow;
+  color: indigo;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 1s;
+  transform: rotate(398grad);
+  text-transform: uppercase;
+}
