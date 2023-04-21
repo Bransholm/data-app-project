@@ -12,11 +12,11 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
-  grid-auto-rows: 200px;
 }
 
 img {
   height: 150px;
+  padding-top: 4px;
 }
 
 .grabcharacters {
@@ -24,15 +24,9 @@ img {
   letter-spacing: 1px;
   font-weight: 1000;
   color: yellow;
+  border-radius: 25px;
+  padding: 4px;
 }
-
-/*.gridlayout :nth-child(1) {
-  grid-column: 1 / span 4;
-}
-
-/*.gridlayout :nth-child(14) {
-  grid-column: 1 / span 4;
-}*/
 
 .grabcharacters:hover {
   background-color: yellow;
@@ -41,4 +35,30 @@ img {
   transition: 1s;
   transform: rotate(398grad);
   text-transform: uppercase;
+}
+
+.infotext {
+  font-size: 13px;
+  letter-spacing: px;
+  margin: 0px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+header {
+  background-color: yellow;
+  color: indigo;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 1000;
+  border-radius: 20px;
+}
+
+footer {
+  background-color: yellow;
+  color: indigo;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 1000;
+  border-radius: 20px;
 }
