@@ -21,9 +21,13 @@ function addCharacters(characters) {
     "beforeend",
     `
     <article class="grabcharacters" align="center">
-    ${characters.name}<br>
+    <p class="character-name-headline">${characters.name}</p>
     <img src="${characters.image}" alt="The image of ${characters.name} isn't avaible" onerror="this.onerror=null; this.src='https://freesvg.org/img/north_park.png'"/><br>
-    <p class="infotext">${characters.name} frerfre erf errffrref refrfrferf rferfefr  frerfeferfer ferfreerffrer ferfrefrer erfferferf</p>
+    <p class="infotext">${characters.name} is a ${characters.gender} 
+    that is ${characters.age} years old and the first appearance was 
+    in ${characters.firstAppearance} and have so fare been seen in 
+    ${characters.appearances} episodes</p>
+    <button class="modal-button-open">See more details</button>
     </article>
     `
   );
@@ -38,4 +42,3 @@ function addCharacters(characters) {
     console.log("Her er vi");
   }
 }
-//onerror="this.onerror=null; this.src='https://sw6315.sfstatic.io/upload_dir/shop/Banan-Oppustelig.jpg'"
