@@ -1,4 +1,4 @@
-html,
+
 body {
   background-color: chocolate;
 }
@@ -43,7 +43,7 @@ img {
 
 .infotext {
   font-size: 13px;
-  letter-spacing: px;
+  letter-spacing: 1px;
   margin: 0px;
   margin-top: 4px;
   margin-bottom: 4px;
@@ -66,6 +66,31 @@ img {
 
 .modal-window {
   background-color: indigo;
+  color: yellow;
+  letter-spacing: 1px;
+  font-weight: 1000;
+  border-radius: 25px;
+  padding: 6px;
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin: 0px;
+  letter-spacing: 1px;
+  margin: 0px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  width: 320px;
+}
+
+ .modal-paragraph {
+  margin: 1px;
+  padding: 1px;
+ }
+
+.character-name-headline-modal {
+  text-transform: uppercase;
+  margin: 0px;
+  padding: 0px;
 }
 
 header {
